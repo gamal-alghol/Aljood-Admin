@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:windowSoftInputMode="adjustResize"
+    android:fitsSystemWindows="true"
+    android:screenOrientation="portrait"
+android:background="@drawable/back"
+    android:layout_alignParentBottom="true"
+    tools:context=".fragment.ContactLenses">
+    <Button
+        android:id="@+id/btn_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white_1"
+        android:drawableLeft="@drawable/ic_bottom"
+        android:gravity="right|center"
+        android:paddingLeft="16dp"
+        android:paddingRight="32dp"
+        android:text="@string/catygory"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:theme="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group_category"
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:clickable="true"
+        android:foregroundGravity="center"
+        android:visibility="visible"
+        app:layout_constraintRight_toRightOf="@+id/btn_category"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_category"
+        app:layout_constraintTop_toBottomOf="@+id/btn_category"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/cake"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_margin="25dp"
+            android:padding="100dp"
+            android:textAlignment="center"
+            android:text="@string/cosmetic"
+            android:textColor="@color/bg_chip_state_list"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAppearance="@style/AppTheme.GenderChip"
+
+            app:chipBackgroundColor="@color/white"
+            app:chipCornerRadius="5dp"
+            app:chipStrokeColor="@color/bg_chip_state_list"
+            app:chipStrokeWidth="1dp"
+            android:gravity="center_horizontal" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/cosmetic"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="@string/medical"
+            android:layout_margin="25dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textAppearance="@style/AppTheme.GenderChip"
+            android:textColor="@color/bg_chip_state_list"
+            android:textSize="18sp"
+            app:chipBackgroundColor="@color/white"
+            app:chipCornerRadius="5dp"
+            app:chipStrokeColor="@color/bg_chip_state_list"
+            app:chipStrokeWidth="1dp"
+            android:gravity="center_horizontal" />
+    </com.google.android.material.chip.ChipGroup>
+    <Button
+        android:id="@+id/btn_duration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white_1"
+        android:drawableLeft="@drawable/ic_bottom"
+        android:gravity="right|center"
+        android:paddingLeft="16dp"
+        android:paddingRight="32dp"
+        android:text="@string/duration"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:theme="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chip_group_category" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group_duration"
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        android:visibility="visible"
+
+        app:layout_constraintRight_toRightOf="@+id/btn_duration"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_duration"
+        app:layout_constraintTop_toBottomOf="@+id/btn_duration"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/monthly"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_margin="25dp"
+            android:padding="100dp"
+            android:textAlignment="center"
+            android:text="@string/monthly"
+            android:textColor="@color/bg_chip_state_list"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAppearance="@style/AppTheme.GenderChip"
+
+            app:chipBackgroundColor="@color/white"
+            app:chipCornerRadius="5dp"
+            app:chipStrokeColor="@color/bg_chip_state_list"
+            app:chipStrokeWidth="1dp"
+            android:gravity="center_horizontal" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/yearly"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="@string/yearly"
+            android:layout_margin="25dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/bg_chip_state_list"
+            android:textSize="18sp"
+            android:textAppearance="@style/AppTheme.GenderChip"
+
+            app:chipBackgroundColor="@color/white"
+            app:chipCornerRadius="5dp"
+            app:chipStrokeColor="@color/bg_chip_state_list"
+            app:chipStrokeWidth="1dp"
+            android:gravity="center_horizontal" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_sph"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:hint="Shp"
+
+        app:layout_constraintRight_toLeftOf="@+id/textInputLayout2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chip_group_duration">
+
+        <AutoCompleteTextView
+            android:id="@+id/spn_sph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+
+            android:lines="1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="150dp"
+
+        android:layout_height="50dp"
+        android:layout_marginRight="8dp"
+        android:hint="اللون"
+        app:endIconMode="dropdown_menu"
+
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout_sph"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toRightOf="@+id/textInputLayout_sph"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout_sph">
+
+        <AutoCompleteTextView
+            android:id="@+id/spn_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoComplete"
+
+            android:lines="1"
+            android:theme="@style/Autocomplete"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_lenses"
+
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout_sph"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_search"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/search"
+        app:layout_constraintEnd_toEndOf="@+id/chip_group_category"
+        app:layout_constraintStart_toStartOf="@+id/chip_group_category"
+        app:layout_constraintTop_toBottomOf="@+id/avilable" />
+
+    <Switch
+        android:id="@+id/avilable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="متوفرة"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout_sph"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

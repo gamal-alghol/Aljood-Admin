@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e51b29</color>
+    <color name="colorPrimaryDark">#b8141f</color>
+    <color name="colorAccent">#373380</color>
+
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+
+    <color name="green">#32fb93</color>
+    <color name="chip_btn"><f772></f772></color>
+    <color name="reseet_btn"> #A7A7A7</color>
+
+    <color name="red">#F44336</color>
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#2661FA</color>
+    <color name="loginBkColor">#f0f0f0</color>
+
+    <!--colros for card-->
+    <color name="white_1">#f2f2f2</color>
+    <color name="red_transpernet">#ff4d4d</color>
+    <color name="black_effective">#2a2a2a</color>
+    <color name="semi_gray">#ababab</color>
+    <color name="transparent">#00000000</color>
+    <color name="back_Child">#66000000</color>
+    <color name="back_Child_2">#00000000</color>
+    <!--colros for lences-->
+    <color name="transparent_lences">#1a1a1a</color>
+    <color name="gray">#808080</color>
+    <color name="brouwn">#A0522D</color>
+    <color name="green_lences">#008000</color>
+    <color name="amethyst">#9966cc</color>
+    <color name="honey">#ebaf4c</color>
+    <color name="sterling_grey">#b5b5ab</color>
+    <color name="turquoise">#40E0D0</color>
+    <color name="blue">#1a5fa1</color>
+    <color name="pure_hazel">#a5c6bb</color>
+    <color name="gemstone_green">#3c8245</color>
+
+</resources>
